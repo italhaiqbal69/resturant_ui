@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:re_ui/widgets/consts.dart';
 
 class HistoryScreen extends StatefulWidget {
   const HistoryScreen({super.key});
@@ -37,9 +38,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   Text('2hrs ago'),
                 ],
               ),
-              SizedBox(
-                height: 10,
-              ),
+              20.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -59,22 +58,20 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 10,
-              ),
+              10.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                   children: [
-                  Icon(Icons.date_range, size: 20,color: Colors.orange,),
-                  SizedBox(width: 20,),
+                  Icon(Icons.date_range, size: 20,color: kOrange,),
+                  20.width,
                   Text(
                     '17 December 2022| 12:15 PM',
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                     ],
                   ),
@@ -83,24 +80,24 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
-                        color: Colors.green),
+                        color: kGreen),
                   ),
                 ],
               ),
-              SizedBox(height: 20,),
+              20.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                   children: [
-                  Icon(Icons.group, size: 20,color: Colors.orange,),
-                  SizedBox(width: 20,),
+                  Icon(Icons.group, size: 20,color: kOrange,),
+                  20.width,
                   Text(
                     '2 Guests',
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                     ],
                   ),
@@ -109,7 +106,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                 ],
               ),
@@ -131,32 +128,28 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   Text('2days ago'),
                 ],
               ),
-              SizedBox(
-                height: 10,
-              ),
+              10.height,
               Text(
                     'Cancelled',
                     style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
-                        color: Colors.red),
+                        color: kRed),
                   ),
-              SizedBox(
-                height: 10,
-              ),
+              10.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                   children: [
-                  Icon(Icons.date_range, size: 20,color: Colors.orange,),
+                  Icon(Icons.date_range, size: 20,color: kOrange,),
                   SizedBox(width: 20,),
                   Text(
                     '17 December 2022| 12:15 PM',
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                     ],
                   ),
@@ -165,24 +158,24 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
-                        color: Colors.green),
+                        color: kGreen),
                   ),
                 ],
               ),
-              SizedBox(height: 20,),
+              20.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                   children: [
-                  Icon(Icons.group, size: 20,color: Colors.orange,),
+                  Icon(Icons.group, size: 20,color: kOrange,),
                   SizedBox(width: 20,),
                   Text(
                     '2 Guests',
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                     ],
                   ),
@@ -191,7 +184,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                 ],
               ),
@@ -213,40 +206,36 @@ class _HistoryScreenState extends State<HistoryScreen> {
                   Text('2days ago'),
                 ],
               ),
-              SizedBox(
-                height: 10,
-              ),
 
-              SizedBox(
-                height: 25,
-              ),
+
+             25.height,
               Row(
                   children: [
-                  Icon(Icons.date_range, size: 20,color: Colors.orange,),
-                  SizedBox(width: 20,),
+                  Icon(Icons.date_range, size: 20,color: kOrange,),
+                  20.width,
                   Text(
                     '17 December 2022| 12:15 PM',
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                     ],
                   ),
-              SizedBox(height: 20,),
+              20.height,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                   children: [
-                  Icon(Icons.group, size: 20,color: Colors.orange,),
-                  SizedBox(width: 20,),
+                  Icon(Icons.group, size: 20,color: kOrange,),
+                  20.width,
                   Text(
                     '2 Guests',
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                     ],
                   ),
@@ -255,7 +244,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: Colors.black),
+                        color: kBlack),
                   ),
                 ],
               ),

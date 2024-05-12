@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:re_ui/widgets/consts.dart';
 import 'package:re_ui/widgets/custom_listtile.dart';
 
 class NotificationScreen extends StatefulWidget {
@@ -23,7 +24,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w700,
-                    color: Colors.black),
+                    color: kBlack),
               ),
               Divider(
                 height: 30,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:re_ui/widgets/consts.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -36,25 +37,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
               Divider(
                 height: 30,
               ),
-              SizedBox(
-                height: 20,
-              ),
+              20.height,
               CircleAvatar(
                 radius: 70,
-                backgroundColor: Colors.orangeAccent,
+                backgroundColor: kOrange,
                 child: Icon(
                   Icons.person,
                   size: 70,
                 ),
               ),
-              SizedBox(height: 25,),
-              Text('Edit Profile', style: TextStyle(color: Colors.orangeAccent, fontWeight: FontWeight.w500,fontSize: 16),),
-              SizedBox(height: 25,),
-              Text('+92 121 587 1321', style: TextStyle(color: Colors.black , fontWeight: FontWeight.w700,fontSize: 19),),
-              SizedBox(height: 10,),
-              Text('zakaullah@email.com', style: TextStyle(color: Colors.black , fontWeight: FontWeight.w700,fontSize: 19),),
+              25.height,
+              Text('Edit Profile', style: TextStyle(color: kOrange, fontWeight: FontWeight.w500,fontSize: 16),),
+              25.height,
+              Text('+92 121 587 1321', style: TextStyle(color: kBlack , fontWeight: FontWeight.w700,fontSize: 19),),
+              10.height,
+              Text('zakaullah@email.com', style: TextStyle(color: kBlack , fontWeight: FontWeight.w700,fontSize: 19),),
 
-              SizedBox(height: 100,),
+              100.height,
               
               ElevatedButton(onPressed: (){},
 
