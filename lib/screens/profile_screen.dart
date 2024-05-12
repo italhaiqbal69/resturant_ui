@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:re_ui/screens/edit_profile.dart';
 import 'package:re_ui/widgets/consts.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -47,18 +49,34 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
               25.height,
-              Text('Edit Profile', style: TextStyle(color: kOrange, fontWeight: FontWeight.w500,fontSize: 16),),
+              GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => EditProfileScreen()));
+                  },
+                  child: Text(
+                    'Edit Profile',
+                    style: TextStyle(
+                        color: kOrange,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16),
+                  )),
               25.height,
-              Text('+92 121 587 1321', style: TextStyle(color: kBlack , fontWeight: FontWeight.w700,fontSize: 19),),
+              Text(
+                '+92 121 587 1321',
+                style: TextStyle(
+                    color: kBlack, fontWeight: FontWeight.w700, fontSize: 19),
+              ),
               10.height,
-              Text('zakaullah@email.com', style: TextStyle(color: kBlack , fontWeight: FontWeight.w700,fontSize: 19),),
-
+              Text(
+                'zakaullah@email.com',
+                style: TextStyle(
+                    color: kBlack, fontWeight: FontWeight.w700, fontSize: 19),
+              ),
               100.height,
-              
-              ElevatedButton(onPressed: (){},
-
-               child: Text('Log Out')),
-
+              ElevatedButton(onPressed: () {}, child: Text('Log Out')),
             ],
           ),
         ),
