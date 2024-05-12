@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:re_ui/screens/history_screen.dart';
-import 'package:re_ui/screens/notification_screen.dart';
+import 'package:re_ui/screens/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const NotificationScreen(),
+      home: const ProfileScreen(),
     );
   }
 }
